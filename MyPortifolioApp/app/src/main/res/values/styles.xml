@@ -8,12 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppButton" parent="Widget.AppCompat.Button.Colored">
-        <item name="colorButtonNormal">@color/colorPrimary</item>
-        <item name="android:textColor">#FFFFFF</item>
+    <style name="AppButton" parent="android:Widget.Button">
+        <item name="android:textColor">@color/colorPrimaryLight</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:minWidth">3000dp</item>
+        <item name="android:layout_margin">@dimen/button_vertical_margin</item>
+        <item name="android:minWidth">@dimen/button_min_horizontal_width</item>
+        <item name="android:onClick">showToast</item>
     </style>
 </resources>

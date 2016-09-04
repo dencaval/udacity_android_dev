@@ -1,81 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.app.portifolio.dencaval.myportifolioapp.MainActivity">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:fillViewport="false"
+    android:padding="10sp">
 
-        <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="My Nanodegree Apps!"
-            android:textColor="@color/colorPrimary"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:id="@+id/view" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_nanodegree_apps"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_title"
+        android:id="@+id/view" />
 
     <Button
-        android:theme="@style/AppButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/AppButton"
         android:text="Popular Movies"
         android:id="@+id/button1"
-        android:layout_below="@+id/view"
-        android:layout_centerHorizontal="true"
-        android:minWidth="3000dp" />
+        android:layout_below="@+id/view"/>
 
     <Button
-        android:theme="@style/AppButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/AppButton"
         android:text="Stock Hawk"
         android:id="@+id/button2"
-        android:layout_below="@+id/button1"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3"
-        android:minWidth="3000dp"/>
+        android:layout_below="@+id/button1" />
 
     <Button
-        android:theme="@style/AppButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/AppButton"
         android:text="Build It Bigger"
         android:id="@+id/button3"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:minWidth="3000dp"/>
+        android:layout_below="@+id/button2"/>
 
     <Button
-        android:theme="@style/AppButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/AppButton"
         android:text="Make Your App Material"
         android:id="@+id/button4"
-        android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:minWidth="3000dp"/>
+        android:layout_below="@+id/button3"/>
 
     <Button
-        android:theme="@style/AppButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/AppButton"
         android:text="Go Ubiquitous"
         android:id="@+id/button5"
-        android:layout_below="@+id/button4"
-        android:layout_centerHorizontal="true"
-        android:minWidth="3000dp"/>
+        android:layout_below="@+id/button4"/>
 
     <Button
-        android:theme="@style/AppButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/AppButton"
         android:text="Capstone"
         android:id="@+id/button6"
-        android:layout_below="@+id/button5"
-        android:layout_centerHorizontal="true"
-        android:minWidth="3000dp"/>
-</RelativeLayout>
+        android:layout_below="@+id/button5" />
+    </RelativeLayout>
+</ScrollView>
